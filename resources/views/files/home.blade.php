@@ -65,7 +65,7 @@
                 Gillbert. Whether you're catching up with friends, working remotely, or simply unwinding with a
                 cup of our finest brew, we invite you to make yourself at home. Come visit us and discover your new
                 favorite spot in town!</p>
-            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">See menu</a>
+            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft see-full-menu-btn">See menu</a>
 
         </div>
 
@@ -89,18 +89,18 @@
 
         <div class="grid-container">
             <div class="grid-item">
-                 <img src="{{ asset('assets\images\visit-us.png') }}" alt="Image 3">
-                <h3>Title One</h3>
+                <img src="{{ asset('assets\images\pop-food-1.jpg') }}" alt="Image 3">
+                <h3>Avacado Toast </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="grid-item">
-                 <img src="{{ asset('assets\images\visit-us.png') }}" alt="Image 3">
-                <h3>Title Two</h3>
+                <img src="{{ asset('assets\images\pop-food-2.jpg') }}" alt="Image 3">
+                <h3>Avacado Toast </h3>
                 <p>Quisque eget nisl id nulla sagittis auctor quis id.</p>
             </div>
             <div class="grid-item">
-                <img src="{{ asset('assets\images\visit-us.png') }}" alt="Image 3">
-                <h3>Title Three</h3>
+                <img src="{{ asset('assets\images\pop-food-3.jpg') }}" alt="Image 3">
+                <h3>Avacado Toast </h3>
                 <p>Morbi blandit cursus risus at ultrices mi tempus imperdiet.</p>
             </div>
         </div>
@@ -109,11 +109,75 @@
     </section>
 
 
-
-
-
-
     {{-- popular dishes end --}}
+
+
+
+    {{-- see menu btn --}}
+    <div class="text-center">
+        <a href="#" class="btn btn-primary py-sm-3 px-sm-5 animated slideInLeft see-full-menu-btn">
+            See full menu
+        </a>
+    </div>
+    {{-- see menu btn done --}}
+
+   <section class="full-menu" id="fullMenu">
+    <div class="menu-card">
+        <h2 class="menu-title">Sample Menu</h2>
+
+        <div class="menu-columns">
+            <!-- LEFT COLUMN -->
+            <div class="menu-column">
+                <h3 class="menu-heading">Clean Eating</h3>
+
+                <div class="menu-item">
+                    <span class="item-name">Garden Egg Mash</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <p class="item-desc">Fresh garden eggs mashed with light spices</p>
+
+                <div class="menu-item">
+                    <span class="item-name">Hotte Fresh – with Bread</span>
+                    <span class="item-price">$5.99</span>
+                </div>
+                <p class="item-desc">Served with warm bread and herbs</p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="menu-column">
+                <h3 class="menu-heading">Desserts</h3>
+
+                <div class="menu-item">
+                    <span class="item-name">Lemon Fresh Paste</span>
+                    <span class="item-price">$3.99</span>
+                </div>
+                <p class="item-desc">Soft lemon paste with cream</p>
+
+                <div class="menu-item">
+                    <span class="item-name">Puff Bread, Butter</span>
+                    <span class="item-price">$4.50</span>
+                </div>
+                <p class="item-desc">Light puff bread served warm</p>
+            </div>
+        </div>
+
+        {{-- <div class="text-center mt-4">
+            <button class="view-menu-btn">View Full Menu</button>
+        </div> --}}
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
