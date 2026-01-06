@@ -44,9 +44,9 @@
             <div class="row align-items-center justify-content-center g-5">
                 <div class="col-lg-6 text-center text-lg-start hero-text">
                     <h1 class="display-3 animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                    <p class="animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor
-                        diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem
-                        sit clita duo justo magna dolore erat amet</p>
+                    <p class="animated slideInLeft mb-4 pb-2">Savor every bite at Cafe Rosati. Our dishes are crafted to
+                        delight your taste buds and leave you craving more. Each meal is a celebration of flavor,
+                        texture, and freshness—perfectly made for every occasion.</p>
                     <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">See menu</a>
                 </div>
                 {{-- <div class="col-lg-6 text-center text-lg-end overflow-hidden">

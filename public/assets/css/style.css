@@ -24,7 +24,7 @@ body {
     padding: 0;
     margin: 0;
     background: url(../images/about-bg.png);
-    height: 600vh;
+    /* height: 600vh; */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -215,7 +215,8 @@ body {
 
 .hero-text a,
 .nav-btn,
-.visit-us-section a,.see-full-menu-btn {
+.visit-us-section a,
+.see-full-menu-btn {
     display: flex;
     justify-self: center;
     font-family: "Montserrat", serif;
@@ -338,6 +339,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 0 !important;
 }
 .popular-dishes .txt_div {
     display: flex;
@@ -423,10 +425,7 @@ body {
     .grid-item {
         flex: 1 1 100%; /* 1 per row */
     }
-    .grid-item img {
-        /* height: 400px; */
-        
-    }
+
     .visit-us-section {
         width: 100%;
         height: 100vh;
@@ -451,11 +450,6 @@ body {
 }
 /* grid done */
 
-
-
-
-
-
 /* full menu starts */
 
 .full-menu {
@@ -463,6 +457,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.4s ease;
+    margin-top: 40px;
 }
 
 .full-menu.active {
@@ -470,21 +465,38 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-
+.see-full-menu-btn {
+    display: flex;
+    align-items: center;
+}
+.fa-arrow-down {
+    margin-left: 8px;
+}
 
 .full-menu {
     padding: 60px 15px;
-    background: #f4f1ec;
+    /* background: #f4f1ec; */
 }
 
 .menu-card {
-    max-width: 900px;
+    max-width: 80%;
     margin: auto;
     padding: 40px;
-    background: #fbf8f3;
+    border-radius: 20px;
+    /* background: #fbf8f3; */
     border: 1px solid #e2d9cc;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.19) 0%,
+        rgba(255, 255, 255, 0.131) 100%
+    );
+    /* border-radius: 16px; */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+    /* Keep content above visual layers */
+    overflow: hidden;
 }
 
 .menu-title {
@@ -552,26 +564,237 @@ body {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 992px) {
+   .menu-card {
+    max-width: 90%;
+   
+}
+}
 
+/* GLASS MORPHISM FOOTER */
+.site-footer {
+    margin-top: 50px;
+    padding: 70px 0 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.08);
+}
 
+/* Footer content styling */
+.footer-brand {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #1f1f1f;
+}
 
+.footer-tagline {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.65);
+    max-width: 540px;
+    margin: 12px auto 30px;
+    line-height: 1.7;
+}
 
+/* Glass divider */
+.footer-divider {
+    width: 90px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(47, 74, 60, 0.8),
+        transparent
+    );
+    margin: 0 auto 25px;
+}
 
+/* Copyright */
+.footer-copy {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.4px;
+}
 
+/* OPTIONAL: smoother rendering on darker backgrounds */
+@supports not (
+    (
+        backdrop-filter: blur(10px),
+    )
+) {
+    .site-footer {
+        background: rgba(255, 255, 255, 0.85);
+    }
+}
+/*  */
 
+/* =========================
+   GALLERY / CONTACT SECTION
+   ========================= */
 
+.gallery-section {
+    padding: 120px 0;
+    /* background: linear-gradient(
+        180deg,
+        #fafafa 0%,
+        #f4f4f4 100%
+    ); */
+}
 
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    gap: 70px;
+    align-items: center;
 
+    /* glass card feel */
+    background: rgba(255, 255, 255, 0.55);
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+}
 
+/* =========================
+   LEFT CONTENT
+   ========================= */
 
+.gallery-content h2 {
+    font-size: 44px;
+    font-weight: 600;
+    /* margin-bottom: 25px; */
+    letter-spacing: 0.5px;
+    color: #1f1f1f;
+}
 
+.gallery-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px;
+}
 
+.gallery-info li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
 
+.gallery-info i {
+    font-size: 20px;
+    color: #2f4a3c;
+}
 
+/* =========================
+   SOCIAL ICONS
+   ========================= */
 
+.gallery-socials {
+    display: flex;
+    gap: 16px;
+}
 
+.gallery-socials i {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    font-size: 16px;
+    color: #2f4a3c;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+.gallery-socials i:hover {
+    color: #fff;
+    background: #2f4a3c;
+    transform: translateY(-4px);
+}
 
+/* =========================
+   RIGHT MEDIA (VIDEOS)
+   ========================= */
 
+.gallery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* video styling */
+.gallery-img video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+
+}
+
+/* subtle overlay for premium look */
+.gallery-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.25)
+    );
+    pointer-events: none;
+}
+
+.gallery-img.large {
+    height: 440px;
+}
+
+.gallery-img.small {
+    height: 440px;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 992px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        gap: 50px;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img.large,
+    .gallery-img.small {
+        height: 320px;
+    }
+
+    .gallery-content h2 {
+        font-size: 36px;
+    }
+}

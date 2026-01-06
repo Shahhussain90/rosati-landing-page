@@ -2550,20 +2550,21 @@ fieldset:disabled .btn {
 }
 .btn-primary {
     color: #000;
-    background-color: #fea116;
-    border-color: #fea116;
+    /* background-color: #fea116;
+    border-color: #fea116; */
+     border-color: #2f4a3c !important;
 }
 .btn-primary:hover {
-    color: #000;
-    background-color: #feaf39;
-    border-color: #feaa2d;
+    color: #fff !important;
+    background-color: #6F8F7C;
+    border-color: #2f4a3c !important;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
-    color: #000;
-    background-color: #feaf39;
-    border-color: #feaa2d;
-    box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
+     color: #fff !important;
+    background-color: #6F8F7C;
+    border-color: #2f4a3c !important;
+    box-shadow: 0 0 0 0.25rem #2f4a3c;
 }
 .btn-check:checked + .btn-primary,
 .btn-check:active + .btn-primary,
