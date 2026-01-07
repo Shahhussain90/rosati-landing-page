@@ -332,6 +332,7 @@ body {
 }
 
 /* popular dishes start */
+
 .popular-dishes {
     padding: 60px 0;
     text-align: center;
@@ -347,6 +348,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
+    padding-bottom: 10px;
 }
 .pupular_dish_line {
     width: 30%;
@@ -451,13 +453,43 @@ body {
 /* grid done */
 
 /* full menu starts */
+.menu-heading-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+.menu-heading-div .txt_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 10px;
+
+}
+.menu-heading-div .pupular_dish_line {
+    width: 30%;
+    height: 1.2px;
+    background-color: var(--primary);
+}
+.menu-heading-div .txt_div h3 {
+    padding: 0px 20px 0px 20px;
+    color: var(--primary);
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+    font-size: 52px;
+}
 
 .full-menu {
-    display: none;
-    opacity: 0;
+    /* display: none; */
+    /* opacity: 0; */
     transform: translateY(30px);
     transition: all 0.4s ease;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 0 !important;
 }
 
 .full-menu.active {
@@ -473,13 +505,8 @@ body {
     margin-left: 8px;
 }
 
-.full-menu {
-    padding: 60px 15px;
-    /* background: #f4f1ec; */
-}
-
 .menu-card {
-    max-width: 80%;
+    max-width: 89%;
     margin: auto;
     padding: 40px;
     border-radius: 20px;
@@ -565,10 +592,9 @@ body {
     }
 }
 @media (max-width: 992px) {
-   .menu-card {
-    max-width: 90%;
-   
-}
+    .menu-card {
+        max-width: 90%;
+    }
 }
 
 /* GLASS MORPHISM FOOTER */
@@ -648,7 +674,7 @@ body {
     margin: auto;
     padding: 60px;
     display: grid;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 2fr;
     gap: 70px;
     align-items: center;
 
@@ -749,8 +775,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    
-
 }
 
 /* subtle overlay for premium look */
@@ -796,5 +820,19 @@ body {
 
     .gallery-content h2 {
         font-size: 36px;
+    }
+
+    .popular-dishes .txt_div,.menu-heading-div .txt_div {
+        width: 100%;
+    }
+    .popular-dishes .pupular_dish_line ,.menu-heading-div .pupular_dish_line {
+        display: none;
+    }
+    .menu-heading-div .txt_div h3,.popular-dishes .txt_div h3 {
+        /* font-size: 42px; */
+        padding: 0px 0px 20px 0px;
+        text-decoration: underline;
+    text-underline-offset: 12px; /* space between text and underline */
+    text-decoration-thickness: 2px; /* underline thickness */
     }
 }

@@ -102,7 +102,7 @@
             <div class="grid-item">
                 <img src="{{ asset('assets\images\pop-food-3.jpg') }}" alt="Image 3">
                 <h3>Bistro Grilled Salad</h3>
-                <p>Classic cafe greens paired with herb-marinated grilled chicken.</p>
+                <p id="Mcardssss">Classic cafe greens paired with herb-marinated grilled chicken.</p>
             </div>
         </div>
 
@@ -115,15 +115,24 @@
 
 
     {{-- see menu btn --}}
-    <div class="text-center">
-        <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft see-full-menu-btn">View Full Menu
-            <i class="fas fa-arrow-down"></i></a>
+    <div class="menu-heading-div">
+        {{-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft see-full-menu-btn">View Full Menu
+            <i class="fas fa-arrow-down" ></i></a> --}}
+        <div class="txt_div">
+            <div class="pupular_dish_line"></div>
+            <div>
+                <h3>Our Offerings</h3>
+            </div>
+            <div class="pupular_dish_line"></div>
+        </div>
     </div>
     {{-- see menu btn done --}}
 
-    <section class="full-menu" id="fullMenu">
+
+    <section class="full-menu">
+
         <div class="menu-card">
-            <h2 class="menu-title">Menu</h2>
+            <h2 class="menu-title">Food & Desserts</h2>
 
             <div class="menu-columns">
                 <!-- CLEAN EATING -->
@@ -251,7 +260,7 @@
 
 
     <section class="gallery-section">
-        <div class="gallery-container">
+        <div class="gallery-container" id="contact">
 
             <!-- LEFT CONTENT -->
             <div class="gallery-content">
@@ -274,11 +283,13 @@
             <!-- RIGHT IMAGES -->
             <div class="gallery-images">
                 <div class="gallery-img large">
-                    <video src="{{ asset('assets\images\contact-videos-compress.mp4') }}" style="object-position: left" autoplay muted loop class="visit-us-video">
+                    <video src="{{ asset('assets\images\contact-videos-compress.mp4') }}" style="object-position: left"
+                        autoplay muted loop class="visit-us-video">
                 </div>
 
                 <div class="gallery-img small">
-                     <video src="{{ asset('assets\images\contact-videos-compress.mp4') }}" style="object-position: right" autoplay muted loop class="visit-us-video">
+                    <video src="{{ asset('assets\images\contact-videos-compress.mp4') }}" style="object-position: right"
+                        autoplay muted loop class="visit-us-video">
                 </div>
             </div>
 
