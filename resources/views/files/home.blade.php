@@ -8,8 +8,8 @@
 @section('content')
 
 
-    <section class="grids-divs">
-        <div class="container my-5">
+    <section class="grids-divs" style="overflow: hidden">
+        <div class="container my-5" data-aos="fade-up" data-aos-duration="500">
             <div class="row no-gutters justify-content-center">
 
                 <div class="col-12 col-md-4 px-2">
@@ -53,19 +53,20 @@
 
     {{-- visit us section  --}}
 
-    <section class="visit-us-section">
+    <section class="visit-us-section" style="overflow: hidden">
 
         <div>
             <video src="{{ asset('assets\images\visti-us video.mp4') }}" autoplay muted loop class="visit-us-video">
         </div>
-        <div class="visit-us-text-div">
-            <h2>Visit Us Today</h2>
-            <p class="text-muted">
+        <div class="visit-us-text-div" style="overflow: hidden">
+            <h2 data-aos="fade-left" data-aos-duration="500">Visit Us Today</h2>
+            <p class="text-muted" data-aos="fade-left" data-aos-duration="500">
                 Experience the perfect blend of rich aromas, delicious flavors, and a cozy atmosphere at
                 Cafe Rosati. Whether you're catching up with friends, working remotely, or simply unwinding with a
                 cup of our finest brew, we invite you to make yourself at home. Come visit us and discover your new
                 favorite spot in town!</p>
-            <a href="#popularDishes" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">See
+            <a href="#popularDishes" class="btn btn-primary py-sm-3 px-sm-5 me-3" data-aos="fade-left"
+                data-aos-duration="1000">See
                 popular dishes</a>
 
         </div>
@@ -80,26 +81,26 @@
     {{-- popular dishes --}}
 
     <section class="popular-dishes my-5" id="popularDishes">
-        <div class="txt_div">
-            <div class="pupular_dish_line"></div>
+        <div class="txt_div" style="overflow: hidden">
+            <div class="pupular_dish_line" data-aos="zoom-in" data-aos-duration="300"></div>
             <div>
-                <h3>popular dishes</h3>
+                <h3 data-aos="zoom-in" data-aos-duration="1000">popular dishes</h3>
             </div>
-            <div class="pupular_dish_line"></div>
+            <div class="pupular_dish_line" data-aos="zoom-in" data-aos-duration="300"></div>
         </div>
 
-        <div class="grid-container">
-            <div class="grid-item">
+        <div class="grid-container" style="overflow: hidden">
+            <div class="grid-item" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250">
                 <img src="{{ asset('assets\images\pop-food-1.jpg') }}" alt="Image 3">
                 <h3>buttermilk pancakes</h3>
                 <p>Simple, classic, and hearty.</p>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" data-aos="flip-left" data-aos-duration="500" data-aos-delay="450">
                 <img src="{{ asset('assets\images\pop-food-2.jpg') }}" alt="Image 3">
                 <h3>buttermilk pancakes</h3>
                 <p>Golden-brown pancakes drizzled with syrup and topped with fresh blueberries and raspberries.</p>
             </div>
-            <div class="grid-item">
+            <div class="grid-item " data-aos="flip-left" data-aos-duration="500" data-aos-delay="750">
                 <img src="{{ asset('assets\images\pop-food-3.jpg') }}" alt="Image 3">
                 <h3>Bistro Grilled Salad</h3>
                 <p id="Mcardssss">Classic cafe greens paired with herb-marinated grilled chicken.</p>
@@ -118,20 +119,20 @@
     <div class="menu-heading-div">
         {{-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft see-full-menu-btn">View Full Menu
             <i class="fas fa-arrow-down" ></i></a> --}}
-        <div class="txt_div">
-            <div class="pupular_dish_line"></div>
+        <div class="txt_div" style="overflow: hidden">
+            <div class="pupular_dish_line" data-aos="zoom-in" data-aos-duration="300"></div>
             <div>
-                <h3>Our Offerings</h3>
+                <h3 data-aos="zoom-in">Our Offerings</h3>
             </div>
-            <div class="pupular_dish_line"></div>
+            <div class="pupular_dish_line" data-aos="zoom-in" data-aos-duration="300"></div>
         </div>
     </div>
     {{-- see menu btn done --}}
 
 
-    <section class="full-menu">
+    <section class="full-menu" style="overflow: hidden">
 
-        <div class="menu-card">
+        <div class="menu-card" data-aos="fade-right" data-aos-duration="500">
             <h2 class="menu-title">Food & Desserts</h2>
 
             <div class="menu-columns">
@@ -178,7 +179,7 @@
         </div>
 
         <!-- SECOND SECTION -->
-        <div class="menu-card mt-5">
+        <div class="menu-card mt-5" data-aos="fade-right" data-aos-duration="500">
             <h2 class="menu-title">BBQ & Grills</h2>
 
             <div class="menu-columns">
@@ -217,7 +218,7 @@
         </div>
 
         <!-- THIRD SECTION -->
-        <div class="menu-card mt-5">
+        <div class="menu-card mt-5" data-aos="fade-right" data-aos-duration="500">
             <h2 class="menu-title">Beverages</h2>
 
             <div class="menu-columns">
@@ -259,8 +260,8 @@
     {{-- menu end --}}
 
 
-    <section class="gallery-section">
-        <div class="gallery-container" id="contact">
+    <section class="gallery-section" style="overflow: hidden">
+        <div class="gallery-container" data-aos="fade-up" id="contact">
 
             <!-- LEFT CONTENT -->
             <div class="gallery-content">
@@ -287,7 +288,7 @@
                         autoplay muted loop class="visit-us-video">
                 </div>
 
-                <div class="gallery-img small">
+                <div class="gallery-img small" id="video-2-con">
                     <video src="{{ asset('assets\images\contact-videos-compress.mp4') }}" style="object-position: right"
                         autoplay muted loop class="visit-us-video">
                 </div>
@@ -305,7 +306,7 @@
 
     {{--  footer --}}
     <footer class="site-footer">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-up" id="contact">
             <h3 class="footer-brand">Cafe Rosati</h3>
 
             <p class="footer-tagline">
