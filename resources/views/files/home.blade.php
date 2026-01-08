@@ -66,7 +66,7 @@
                 cup of our finest brew, we invite you to make yourself at home. Come visit us and discover your new
                 favorite spot in town!</p>
             <a href="#popularDishes" class="btn btn-primary py-sm-3 px-sm-5 me-3" data-aos="fade-left"
-                data-aos-duration="1000">See
+                data-aos-duration="1000" data-aos="ease-in" >See
                 popular dishes</a>
 
         </div>
@@ -92,7 +92,7 @@
         <div class="grid-container" style="overflow: hidden">
             <div class="grid-item" data-aos="flip-left" data-aos-duration="500" data-aos-delay="250">
                 <img src="{{ asset('assets\images\pop-food-1.jpg') }}" alt="Image 3">
-                <h3>buttermilk pancakes</h3>
+                <h3>Holy Guacamole Toast</h3>
                 <p>Simple, classic, and hearty.</p>
             </div>
             <div class="grid-item" data-aos="flip-left" data-aos-duration="500" data-aos-delay="450">
@@ -305,7 +305,7 @@
 
 
     {{--  footer --}}
-    <footer class="site-footer">
+    <footer class="site-footer" style="overflow: hidden">
         <div class="container text-center" data-aos="fade-up" id="contact">
             <h3 class="footer-brand">Cafe Rosati</h3>
 
